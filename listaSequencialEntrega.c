@@ -202,6 +202,7 @@ Elemento* elementoPosic(Lista *list, int posicao){
 int main() {
     //Esse codigo na main demonstra que as funções fazem oque foi pedido
 
+    printf("Inicializando a lista \n");
     Lista* minhaLista = criaLista(); //Cria a lista
     printf("Lista esta vazia?: ");
     if (vazia(minhaLista) == 1){
@@ -251,12 +252,12 @@ int main() {
     insereAnt(minhaLista, 0, 16);
     imprime(minhaLista);
 
+    printf("Limpando a lista...\n");
+              
     //Aqui demonstra que esvazia a lista
-    flvazia(minhaLista);
-    imprime(minhaLista);
-
     flvaziaLibera(minhaLista);
-    imprime(minhaLista);
+    flvazia(minhaLista);
+
 
     return 0;
 }
